@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "NetStream.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NetStream *stream = [[NetStream alloc] initStreamWithHost:@"224.1.2.3" Port:8888];
+    NSLog(@"ss");
 }
 
 - (void)didReceiveMemoryWarning {
